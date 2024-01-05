@@ -1,13 +1,16 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QPixmap>
+#include "modbustcp.h"
 
+ModbusTCP *tcp=new ModbusTCP();
 void check_show(int value);
 MainWindow::MainWindow(QWidget *parent):
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    tcp->begin();
     int w =ui->X_Palm->width();
     int h =ui->X_Palm->height();
     int Position,V_T=0,V_I=0,V_M=0,V_R=0,V_P=0;
