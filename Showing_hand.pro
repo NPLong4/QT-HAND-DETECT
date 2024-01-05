@@ -26,3 +26,19 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    PNG_X/X_I_1.png \
+    PNG_X/X_I_2.png \
+    PNG_X/X_M_1.png \
+    PNG_X/X_M_2.png \
+    PNG_X/X_P_1.png \
+    PNG_X/X_P_2.png \
+    PNG_X/X_Palm.png \
+    PNG_X/X_Palm_T_0.png \
+    PNG_X/X_Palm_T_1.png \
+    PNG_X/X_Palm_T_2.png \
+    PNG_X/X_R_1.png \
+    PNG_X/X_R_2.png \
+    PNG_X/X_T_1.png \
+    PNG_X/X_T_2.png
